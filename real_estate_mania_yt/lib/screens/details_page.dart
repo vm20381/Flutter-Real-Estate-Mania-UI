@@ -36,7 +36,7 @@ class DetailsPage extends StatelessWidget {
                           Text(
                             propertyModel.title,
                             style:
-                                Theme.of(context).textTheme.headline6!.copyWith(
+                                Theme.of(context).textTheme.titleLarge!.copyWith(
                                       fontWeight: FontWeight.bold,
                                     ),
                           ),
@@ -48,7 +48,7 @@ class DetailsPage extends StatelessWidget {
                           Text(
                             propertyModel.rating.toString(),
                             style:
-                                Theme.of(context).textTheme.subtitle1!.copyWith(
+                                Theme.of(context).textTheme.bodyLarge!.copyWith(
                                       fontWeight: FontWeight.bold,
                                     ),
                           ),
@@ -59,7 +59,7 @@ class DetailsPage extends StatelessWidget {
                       ),
                       Text(
                         propertyModel.subTitle.toString(),
-                        style: Theme.of(context).textTheme.subtitle2!.copyWith(
+                        style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                               color: Colors.black.withOpacity(0.5),
                             ),
                       ),
@@ -93,14 +93,14 @@ class DetailsPage extends StatelessWidget {
                       ),
                       Text(
                         "Descriptions",
-                        style: Theme.of(context).textTheme.headline6,
+                        style: Theme.of(context).textTheme.titleLarge,
                       ),
                       const SizedBox(
                         height: 12,
                       ),
                       Text(
                         propertyModel.details,
-                        style: Theme.of(context).textTheme.subtitle2!.copyWith(
+                        style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                               color: Colors.black.withOpacity(0.5),
                               letterSpacing: 1.1,
                               height: 1.4,
@@ -204,7 +204,7 @@ class DetailsPage extends StatelessWidget {
                           child: Text(
                             "BUY NOW",
                             style:
-                                Theme.of(context).textTheme.subtitle2!.copyWith(
+                                Theme.of(context).textTheme.bodyMedium!.copyWith(
                                       color: Colors.white,
                                       fontWeight: FontWeight.bold,
                                     ),
@@ -242,7 +242,7 @@ class DetailsPage extends StatelessWidget {
           ),
           Text(
             text,
-            style: Theme.of(context).textTheme.subtitle1,
+            style: Theme.of(context).textTheme.bodyLarge,
           ),
         ],
       ),

@@ -36,7 +36,7 @@ class CategoryPage extends StatelessWidget {
                     ),
                     Text(
                       categoryModel.title,
-                      style: Theme.of(context).textTheme.headline6,
+                      style: Theme.of(context).textTheme.titleLarge,
                     ),
                   ],
                 ),
@@ -68,13 +68,13 @@ class CategoryPage extends StatelessWidget {
                   children: [
                     Text(
                       "Popular",
-                      style: Theme.of(context).textTheme.headline6,
+                      style: Theme.of(context).textTheme.titleLarge,
                     ),
                     GestureDetector(
                       onTap: () {},
                       child: Text(
                         "See All",
-                        style: Theme.of(context).textTheme.subtitle1,
+                        style: Theme.of(context).textTheme.bodyLarge,
                       ),
                     ),
                   ],
@@ -145,7 +145,7 @@ class ExpandedRecommendationCard extends StatelessWidget {
               children: [
                 Text(
                   propertyModel.title,
-                  style: Theme.of(context).textTheme.headline6!.copyWith(
+                  style: Theme.of(context).textTheme.titleLarge!.copyWith(
                         fontWeight: FontWeight.bold,
                       ),
                 ),
@@ -156,7 +156,7 @@ class ExpandedRecommendationCard extends StatelessWidget {
                 ),
                 Text(
                   propertyModel.rating.toString(),
-                  style: Theme.of(context).textTheme.subtitle1!.copyWith(
+                  style: Theme.of(context).textTheme.bodyLarge!.copyWith(
                         fontWeight: FontWeight.bold,
                       ),
                 ),
@@ -167,7 +167,7 @@ class ExpandedRecommendationCard extends StatelessWidget {
             ),
             Text(
               "${propertyModel.rooms} rooms - ${propertyModel.area} square foots - ${propertyModel.floors} floors",
-              style: Theme.of(context).textTheme.caption!.copyWith(
+              style: Theme.of(context).textTheme.bodySmall!.copyWith(
                     fontWeight: FontWeight.bold,
                   ),
             ),
@@ -202,7 +202,7 @@ class ExpandedRecommendationCard extends StatelessWidget {
                           child: Text(
                             "BUY NOW",
                             style:
-                                Theme.of(context).textTheme.subtitle2!.copyWith(
+                                Theme.of(context).textTheme.bodyMedium!.copyWith(
                                       color: Colors.white,
                                       fontWeight: FontWeight.bold,
                                     ),

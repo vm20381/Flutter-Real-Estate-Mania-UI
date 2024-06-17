@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:line_icons/line_icons.dart';
+import 'package:get/get.dart';
 
 import 'package:real_estate_mania_yt/models/category_model.dart';
 import 'package:real_estate_mania_yt/models/property_model.dart';
@@ -42,11 +43,11 @@ class _HomePageState extends State<HomePage> {
                           children: [
                             Text(
                               "Welcome back!",
-                              style: Theme.of(context).textTheme.caption,
+                              style: Theme.of(context).textTheme.bodyMedium,
                             ),
                             Text(
-                              "Imran Sefat",
-                              style: Theme.of(context).textTheme.headline6,
+                              "Nick Saremi",
+                              style: Theme.of(context).textTheme.titleLarge,
                             ),
                           ],
                         ),
@@ -95,7 +96,7 @@ class _HomePageState extends State<HomePage> {
                     ),
                     Text(
                       "Recommendations",
-                      style: Theme.of(context).textTheme.headline6,
+                      style: Theme.of(context).textTheme.titleLarge,
                     ),
                     const SizedBox(
                       height: 30,
@@ -236,7 +237,7 @@ class RecommendationCard extends StatelessWidget {
               ),
               child: Text(
                 "FOR SALE",
-                style: Theme.of(context).textTheme.subtitle2,
+                style: Theme.of(context).textTheme.bodyMedium,
               ),
             ),
             const SizedBox(
@@ -244,7 +245,7 @@ class RecommendationCard extends StatelessWidget {
             ),
             Text(
               propertyModel.title,
-              style: Theme.of(context).textTheme.subtitle1!.copyWith(
+              style: Theme.of(context).textTheme.bodyLarge!.copyWith(
                     fontWeight: FontWeight.bold,
                   ),
             ),
@@ -253,7 +254,7 @@ class RecommendationCard extends StatelessWidget {
             ),
             Text(
               "${propertyModel.rooms} rooms - ${propertyModel.area} square foots - ${propertyModel.floors} floors",
-              style: Theme.of(context).textTheme.caption!.copyWith(
+              style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                     fontWeight: FontWeight.bold,
                   ),
             ),
@@ -296,7 +297,7 @@ class CategoryButton extends StatelessWidget {
           children: [
             Text(
               categoryModel.title,
-              style: Theme.of(context).textTheme.subtitle1!.copyWith(
+              style: Theme.of(context).textTheme.bodyLarge!.copyWith(
                     fontWeight: FontWeight.w500,
                   ),
             ),
